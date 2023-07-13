@@ -3,6 +3,7 @@ package com.glc.car.Controller;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,6 +15,7 @@ import com.glc.car.Repository.CarRepo;
 
 @RestController
 @RequestMapping("/cars") // http://localhost:8080/cars
+@CrossOrigin("*")
 public class CarCon {
       private final CarRepo carRepo;
      
